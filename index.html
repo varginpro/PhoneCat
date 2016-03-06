@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>My First PhoneCat Application</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" style="margin-top: 50px;">
+				<div class="form-group">
+					<input type="text" class="form-control" ng-model="search">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3" ng-repeat="phone in data | filter: search">
+				<h3>{{ phone.name }}</h3>
+				<img ng-src="{{ phone .imageUrl }}" class="img-responsive" alt="">
+				<p>{{ phone.snippet }}</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script type="text/javascript" src="/application.js"></script>
+
+</body>
+</html>
