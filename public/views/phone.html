@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row">
+		<div class="colk-md-12">
+			<h1>{{ phone.name }}</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-3" ng-repeat="url in phone.images">
+					<img ng-src="{{ url }}" class="img-responsive" alt="{{ phone.name }}">
+				</div>
+			</div>
+			<hr>
+			<blockquote>
+				<p>{{ phone.description }}</p>
+			</blockquote>
+			<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Battery</h3>
+					<dl>
+						<dt>Type</dt>
+						<dd>{{  phone.battery.type }}</dd>
+					</dl>
+				</div>
+				<div class="col-md-12">
+					<pre>
+						{{ phone }}
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "phone",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varginpro/PhoneCat.git"
+  },
+  "author": "Vargin Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varginpro/PhoneCat/issues"
+  },
+  "homepage": "https://github.com/varginpro/PhoneCat#readme"
+}

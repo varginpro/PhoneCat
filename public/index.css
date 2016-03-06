@@ -1,0 +1,24 @@
+dl {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+dl dt {
+  float: left;
+  width: 60px;
+  clear: left;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  line-height: 1.42857;
+}
+
+dl dd {
+  margin-left: 30px;
+  line-height: 1.42857;
+}
